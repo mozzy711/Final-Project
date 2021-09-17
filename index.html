@@ -1,0 +1,285 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+  <title>Quik.ly</title>
+
+</head>
+
+<body class = "blue-grey lighten-2">
+
+  <!-- navbar -->
+  <header>
+       <nav class="nav-wrapper blue-grey darken-4" id="navbar">
+          <div class="container">
+            <a href="#navbar"><i class="fas fa-bicycle medium center blue-grey-text text-lighten-2"></i> </a>
+            <a href="#navbar" class="brand-logo blue-grey-text text-lighten-2 center"></i>Quik.ly</a>
+            <i class="fas fa-biking blue-grey lighten-2"></i>
+            <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+              <i class="material-icons">menu</i>
+            </a>
+            
+            <!-- Menu -->
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#footer" class="blue-grey-text text-lighten-2">Get the App</a></li>
+              <li><a href="#footer" class="blue-grey-text text-lighten-2">Contact Us</a></li>
+              <li><a href="#book" class="blue-grey-text text-lighten-2">Book Now</a></li>
+            
+            <!-- Mobile  -->
+            </ul>
+            <ul class="sidenav blue-grey darken-4 " id="mobile-menu">
+              <li><a href="#" class="blue-grey-text text-lighten-2">About</a></li>
+              <li><a href="#" class="blue-grey-text text-lighten-2">Services</a></li>
+              
+            </ul>
+          </div>
+        </nav>
+  </header>
+ 
+    <!-- Parallax Image -->
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/bike6.jpg"></div>
+    </div>
+      <div class="section blue-grey lighten-4">
+      <div class="row container">
+        <!-- contact form -->
+      <section class="section container scrollspy" id="contact">
+
+    <div class="row" id="book">
+
+      <div class="col s12 l5">
+        <h2 class="blue-grey-text text-darken-4">Rent a Bike</h2>
+        <div class="blue-grey-text text-darken-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+        <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+        <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+        </div>
+        
+      </div>
+
+      <div class="col s12 l5 offset-l2">
+        <!-- user input form -->
+        <form>
+          <!-- Full name -->
+          <div class="input-field">
+            <i class="material-icons prefix blue-grey-text text-darken-4">account_box</i>
+            <textarea id="name" class="materialize-textarea blue-grey-text text-darken-4"></textarea>
+            <label for="name" class="blue-grey-text text-darken-4">Full Name</label>
+          </div>
+            <!-- Phone  -->
+          <div class="input-field">
+            <i class="material-icons prefix blue-grey-text text-darken-4">phone</i>
+            <textarea id="number" class="materialize-textarea blue-grey-text text-darken-4"></textarea>
+            <label for="number" class="blue-grey-text text-darken-4">Phone</label>
+          </div>
+
+          <!-- Email -->
+          <div class="input-field">
+            <i class="material-icons prefix blue-grey-text text-darken-4">email</i>
+            <input type="email" id="email" class="blue-grey-text text-darken-4">
+            <label for="email" class="blue-grey-text text-darken-4">Email</label>
+          </div>
+         
+            <!-- Date Picker  -->
+          <div class="input-field blue-grey-text text-darken-4">
+            <i class="material-icons prefix blue-grey-text text-darken-4">date_range</i>
+            <input type="text" id="date" class="datepicker blue-grey-text text-darken-4">
+            <label for="date" class="blue-grey-text text-darken-4">Date</label>
+          </div>
+
+          <!-- Time Picker -->
+          <div class="input-field blue-grey-text text-darken-4">
+            <i class="material-icons prefix blue-grey-text text-darken-4">access_time
+            </i>
+            <input type="text" id="time" class="timepicker blue-grey-text text-darken-4">
+            <label for="time" class="blue-grey-text text-darken-4">Time</label>
+          </div>
+
+          <!-- Additional Services using Checkbox -->
+          <div class="input-field">
+            <p>Additional Services</p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span class="blue-grey-text text-darken-4">Delivery</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span class="blue-grey-text text-darken-4">Insurance</span>
+              </label>
+            </p>
+          </div>
+
+          <!-- Book Button using Modal-->
+          <div class="input-field center">
+          
+            <a class="waves-effect waves-light btn modal-trigger blue-grey darken-4 blue-grey-text text-lighten-4" href="#modalbook">Book a Bike</a>
+
+            <!-- Modal Structure -->
+            <div id="modalbook" class="modal">
+              <div class="modal-content blue-grey darken-2 ">
+                <h4 class="blue-grey-text text-darken-4">Booking Successful</h4>
+                  <p class="grey-text text-lighten-2">Please check your email for the whole confirmation details.</p>
+              </div>
+              <div class="modal-footer blue-grey darken-4">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat blue-grey-text text-lighten-4">Close</a>
+              </div>
+            </div>
+         
+
+            <!-- Terms and Conditions using Modal Trigger -->
+            <a class="waves-effect waves-light btn modal-trigger blue-grey darken-4 blue-grey-text text-lighten-4" href="#modal1">View Terms</a>
+
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+              <div class="modal-content blue-grey darken-2 ">
+                <h4 class="blue-grey-text text-darken-4">Terms and Conditions</h4>
+                <p class="grey-text text-lighten-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero neque sit ipsam ducimus temporibus quod hic quam eius obcaecati recusandae, ut, similique officia et facere fugiat asperiores dolore voluptate, a impedit repellat quas alias sed. Ex dolore nihil suscipit quasi quaerat, a eos obcaecati odio, possimus quidem iusto, sit delectus.</p>
+                <p class="grey-text text-lighten-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero neque sit ipsam ducimus temporibus quod hic quam eius obcaecati recusandae, ut, similique officia et facere fugiat asperiores dolore voluptate, a impedit repellat quas alias sed. Ex dolore nihil suscipit quasi quaerat, a eos obcaecati odio, possimus quidem iusto, sit delectus.</p>
+                <p class="grey-text text-lighten-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero neque sit ipsam ducimus temporibus quod hic quam eius obcaecati recusandae, ut, similique officia et facere fugiat asperiores dolore voluptate, a impedit repellat quas alias sed. Ex dolore nihil suscipit quasi quaerat, a eos obcaecati odio, possimus quidem iusto, sit delectus.</p>
+              </div>
+              <div class="modal-footer blue-grey darken-4">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat blue-grey-text text-lighten-4">Agree</a>
+              </div>
+            </div>
+          </div>
+
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+      </div>
+    </div>
+    
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/bike6.jpg"></div>
+    </div>
+
+
+      <div class="row">
+
+        <div class="col s12 m6">
+          <!-- Card With Image & Floating Button -->
+          <div class="card">
+
+              <div class="card-image">
+                  
+                  <div class="carousel carousel-slider">
+                    <a href="#one!" class="carousel-item"><img class = "materialboxed responsive-img" src="img/bike1.jpg"></a>
+                    <a href="#two!" class="carousel-item"><img class = "materialboxed responsive-img" src="img/bike3.jpg"></a>
+                                         
+                  </div>
+                  <span class="card-title">Home Delivery Service</span>
+                  <a href="#" class="btn-floating halfway-fab waves-effect waves-light blue">
+                      <i class="material-icons">swap_horiz</i>   
+                  </a>
+                  
+              </div>
+
+              <div class="card-content blue-grey darken-4 blue-grey-text text-lighten-4">
+                  
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, deleniti?</p>
+              </div>
+          </div>
+        </div>  
+
+
+
+        <div class="col s12 m6">
+            <!-- Card With Image & Floating Button -->
+            <div class="card">
+  
+                <div class="card-image">
+                    
+                                  
+                    <div class="carousel carousel-slider">
+                        <a href="#two!" class="carousel-item"><img class = "materialboxed responsive-img" src="img/bike4.jpg"></a>
+                        <a href="#two!" class="carousel-item"><img class = "materialboxed responsive-img" src="img/bike2.jpg"></a>
+                    
+                            
+                    </div>
+  
+                    <span class="card-title white-text">Get Insured!</span>
+                    <a href="#" class="btn-floating halfway-fab waves-effect waves-light blue">
+                        <i class="material-icons">swap_horiz</i>   
+                    </a>
+                    
+                </div>
+  
+                <div class="card-content  blue-grey darken-4 blue-grey-text text-lighten-4">
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, deleniti?</p>
+                </div>
+  
+            </div>
+        </div> 
+      </div> 
+      
+
+
+  <!-- footer -->
+  <footer class="page-footer blue-grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12" id="footer">
+          <h5 class="blue-grey-text text-lighten-4">Contact Us</h5>
+          
+          <ul>
+            <li><a class="blue-grey-text text-lighten-4" href="https://facebook.com"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+            <li><a class="blue-grey-text text-lighten-4" href="https://instagram.com"><i class="fab fa-instagram"></i>  Instagram</a></li>
+            <li><a class="blue-grey-text text-lighten-4" href="https://twitter.com"><i class="fab fa-twitter"></i> Twitter</a></li>
+          </ul>
+        </div>
+
+        <div class="col l4 offset-l2 s12">
+          <h5 class="blue-grey-text text-lighten-4">Get the App Here</h5>
+          <ul>
+            <li><a class="blue-grey-text text-lighten-4" href="https://play.google.com/"><i class="fab fa-google-play prefix"></i> Google Play</a></li>
+            <li><a class="blue-grey-text text-lighten-4" href="https://www.apple.com/ph/app-store/"><i class="fab fa-apple"></i> Apple Store</a></li>
+            <li><a class="blue-grey-text text-lighten-4" href="https://appgallery.huawei.com/Featured"><i class="fas fa-mobile-alt"></i> Huawei AppGallery</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align blue-grey-text text-lighten-4"> <a href="#navbar">@ 2021 Quik.ly</a>  </div>
+    </div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.datepicker').datepicker({
+        });
+      $('.timepicker').timepicker({
+        });
+      $('.carousel.carousel-slider').carousel({
+      fullWidth: true});
+      $('.modal').modal();
+      $('.parallax').parallax();
+      $('.scrollspy').scrollSpy();
+      $('.tabs').tabs();
+
+    });
+  </script>
+</body>
+</html>
